@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Marketing Master</title>
+
+    <link rel="stylesheet" href="money.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- <script src="https://kit.fontawesome.com/b429ab8e5c.js" crossorigin="anonymous"></script> -->
+</head>
+
+<body class="bg-sky-100">
+    <!-- header section -->
+    <header>
+        <h1 class="text-5xl mt-8 text-center mt-16 text-sky-900 font-bold md:text-center
+        ">MARKETING MASTER 💰 <span><i class="fa-solid fa-sack-dollar"></i></span></h1>
+    </header>
+    <!-- main -->
+
+    <main>
+        <section class="mt-16 ">
+
+            <div class="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-2 ">
+
+                <div class=" mx-12 m-6 ">
+                    <img class="w-full h-full " src="pic1.jpg" alt="">
+                </div>
+
+                <!-- income field -->
+
+                <div class="bg-blue-300	w-4/5 mx-16 m-6">
+
+                    <div class="mx-4">
+                        <h2 class="text-xl mt-8 text-center text-blue-900	">Income</h2>
+
+                        <div class="pt-3 flex justify-center items-center gap-x-6">
+                            <h6 class=" pt-1 ">Income :</h6>
+                            <input class="pt-3 text-center px-3 border-2 rounded bg-slate-300  " id="income"
+                                type="text" value=" ">
+                        </div>
+
+                    </div>
+
+                    <!-- expense field -->
+
+                    <div class=" mx-4">
+                        <h2 class="text-xl mt-8 text-center text-blue-900	">
+                            Expenses
+                        </h2>
+
+                        <div class="pt-3 flex justify-center items-center gap-x-6">
+                            <h6 class="m-3 ">Food :</h6>
+                            <input class="pt-1 text-center px-3 border-2 rounded bg-slate-300  " id="income-food"
+                                type="number" value="">
+                        </div>
+                        <div class="pt-3 flex justify-center items-center gap-x-6">
+                            <h6 class="m-3 ">Rent :</h6>
+                            <input class="pt-1 text-center px-3 border-2 rounded bg-slate-300  " id="income-rent"
+                                type="number" value="">
+                        </div>
+                        <div class="pt-3 flex justify-center items-center gap-x-6">
+                            <h6 class="m-1 ">Clothes :</h6>
+                            <input class="pt-1 text-center px-3 border-2 rounded bg-slate-300  " id="income-clothes"
+                                type="number" value="">
+                        </div>
+
+                    </div>
+
+                    <!-- calculate -->
+
+                    <div class="text-xl mt-8 text-center text-blue-900 content-center">
+                        <button id="income-total" class="m-3 mx-4 border-2 rounded p-2 bg-yellow-200"
+                            type="button">Calculate</button>
+
+                    </div>
+                    <!-- total expense -->
+
+                    <div>
+                        <h2 class="text-xl mt-3 text-center text-blue-900">Total expense : <span id="total-expense">0
+                            </span>
+                        </h2>
+
+                        <h2 class="text-xl mt-1 text-center text-sky-900">Balance: <span id="remain-balance">0
+
+                            </span>
+                        </h2>
+                        <!-- savings amount -->
+
+                        <div class=" gap-2 flex justify-center">
+
+                            <h6 class="pe-2 pt-2">Save:</h6>
+
+                            <input class="m-2 w-1/6 pt-2 border-2 rounded bg-slate-300" id="savings" type="value">
+
+                            <h6 class="pt-2 " id="percent ">%</h6>
+
+                            <button class=" text-white border-1 mt-3 m-2 rounded w-1/6 bg-blue-700"
+                                id="savings-button" type="button" 
+                                >Save</button>
+
+                                <!-- onclick="SaveBalance()" -->
+                            
+                        </div>
+
+                        <br>
+                        <!-- remaining balance -->
+
+                        <h2 class="text-xl text-center text-purple-900">Saving Amount: <span id="saving-income">
+                                0
+                            </span>
+                        </h2>
+
+                        <h2 class="text-xl mt-2 text-center text-purple-900"> Remaining Balance: <span
+                                id="remaining-income">
+                                0
+                            </span>
+                        </h2>
+
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+    <script src="money.js"></script>
+
+
+
+</body>
+
+</html>
